@@ -1,81 +1,53 @@
-# Turborepo starter
+# Monorepo Boilerplate
 
-This is an official starter Turborepo.
+### 사용 기술
 
-## Using this example
+Framework: NextJS
+Monorepo Tool: Turborepo
+CICD: Vercel
+Package Manager: yarn berry
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+### 프로젝트 구조
 
 ```
-cd my-turborepo
-pnpm build
+turborepo-demo/
+├── apps/
+│ ├── web/ # 애플리케이션의 소스 코드
+│ └── docs/ # 문서화 애플리케이션 (storybook, tsdocs, api 문서 등)
+├── packages/
+│ ├── eslint-config/ # 공통 ESLint 규칙 설정
+│ ├── typescript-config/ # 공통 typescript 설정
+│ ├── ui/ # 공통 라이브러리와 모듈
+│ ├── utils/ # 공통 유틸리티 함수
+│ └── services/ # 공통 서비스
+├── package.json # 모노레포의 루트 package.json
+└── turbo.json # Turbo의 설정 파일
 ```
 
-### Develop
-
-To develop all apps and packages, run the following command:
+## 실행
 
 ```
-cd my-turborepo
-pnpm dev
-```
+# 전체 실행
+yarn turbo run dev
 
-### Remote Caching
+# 특정 앱 실행
+yarn turbo run dev --filter=apps/my-app
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+# 특정 패키지 실행
+yarn turbo run dev --filter=packages/my-package
 
 ```
-npx turbo link
+
+## 참고 링크
+
+[공식문서](https://turbo.build/repo/docs)
+[Turborepo + Yarn berry를 이용한 Monorepo 구축 방법](https://techblog.uplus.co.kr/turborepo-yarn-berry%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-monorepo-%EA%B5%AC%EC%B6%95-%EB%B0%A9%EB%B2%95-e09d58da9fdf)
+[Step-by-Step Monorepo Tutorial: Turbo Repo, Vite, Next, Tailwind, and Storybook](https://www.youtube.com/watch?v=exCTI9nOc-E)
+
+## 오류
+
+1. internal package 생성 후, 캐시를 정리하여 올바르게 인식되도록 함.
+
 ```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+yarn install
+```
