@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { add } from "@repo/math/add";
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
         <ol>
           <li>
             Get started by editing <code>app/page.tsx</code>
+            {add(99, 2)}
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
         <div className={styles.ctas}>
           <a
             className={styles.primary}
