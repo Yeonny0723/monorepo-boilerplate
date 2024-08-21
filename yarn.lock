@@ -717,7 +717,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@repo/math@npm:*, @repo/math@workspace:packages/math":
+"@repo/math@workspace:packages/math":
   version: 0.0.0-use.local
   resolution: "@repo/math@workspace:packages/math"
   dependencies:
@@ -6402,7 +6402,6 @@ __metadata:
   resolution: "web@workspace:apps/web"
   dependencies:
     "@repo/eslint-config": "npm:*"
-    "@repo/math": "npm:*"
     "@repo/typescript-config": "npm:*"
     "@repo/ui": "npm:*"
     "@types/node": "npm:^20"

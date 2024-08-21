@@ -2,10 +2,10 @@
 
 ### 사용 기술
 
-Framework: NextJS
-Monorepo Tool: Turborepo
-CICD: Vercel
-Package Manager: yarn berry
+Framework: NextJS <br/>
+Monorepo Tool: Turborepo <br/>
+CICD: Vercel <br/>
+Package Manager: yarn berry <br/>
 
 ### 프로젝트 구조
 
@@ -31,18 +31,20 @@ turborepo-demo/
 yarn turbo run dev
 
 # 특정 앱 실행
-yarn turbo run dev --filter=apps/my-app
+yarn turbo run dev --filter=my-app
 
 # 특정 패키지 실행
-yarn turbo run dev --filter=packages/my-package
+yarn turbo run dev --filter=my-package
 
 ```
 
 ## 참고 링크
 
-[공식문서](https://turbo.build/repo/docs)
-[Turborepo + Yarn berry를 이용한 Monorepo 구축 방법](https://techblog.uplus.co.kr/turborepo-yarn-berry%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-monorepo-%EA%B5%AC%EC%B6%95-%EB%B0%A9%EB%B2%95-e09d58da9fdf)
-[Step-by-Step Monorepo Tutorial: Turbo Repo, Vite, Next, Tailwind, and Storybook](https://www.youtube.com/watch?v=exCTI9nOc-E)
+[공식문서](https://turbo.build/repo/docs) <br/>
+
+[Turborepo + Yarn berry를 이용한 Monorepo 구축 방법](https://techblog.uplus.co.kr/turborepo-yarn-berry%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-monorepo-%EA%B5%AC%EC%B6%95-%EB%B0%A9%EB%B2%95-e09d58da9fdf) <br/>
+
+[Step-by-Step Monorepo Tutorial: Turbo Repo, Vite, Next, Tailwind, and Storybook](https://www.youtube.com/watch?v=exCTI9nOc-E) <br/>
 
 ## 오류
 
