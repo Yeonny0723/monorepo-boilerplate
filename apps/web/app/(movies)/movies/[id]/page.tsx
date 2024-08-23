@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import MovieInfo from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-videos";
+import ErrorBoundary from "../../../../components/error-boundary";
 
 export default async function MovieDetail({
   params: { id },
@@ -14,7 +15,9 @@ export default async function MovieDetail({
         <MovieInfo id={id} />
       </Suspense>
       <Suspense fallback={<h1>Loading movie videos</h1>}>
-        <MovieVideos id={id} />
+        <ErrorBoundary fallback={<h1>Error loading movie videos!</h1>}>
+          <MovieVideos id={id} />
+        </ErrorBoundary>
       </Suspense>
     </div>
   );
