@@ -27,6 +27,10 @@ turborepo-demo/
 ## 실행
 
 ```
+# 커밋 템플릿 등록
+git config --global commit.template .gitmessage.txt
+
+
 # 전체 실행
 yarn turbo run dev
 

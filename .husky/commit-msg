@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# commit stage
+yarn commitlint --edit "$1"
+
+
+# pre-commit stage 검사를 추가하고 싶다면?
+# yarn lint && yarn format && lint-staged
+
