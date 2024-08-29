@@ -30,7 +30,6 @@ turborepo-demo/
 # 커밋 템플릿 등록
 git config --global commit.template .gitmessage.txt
 
-
 # 전체 실행
 yarn turbo run dev
 
@@ -40,7 +39,14 @@ yarn turbo run dev --filter=my-app
 # 특정 패키지 실행
 yarn turbo run dev --filter=my-package
 
+# fe-submodule 설치.
+yarn add @mis/fasoo-fesubmodule
+
 ```
+
+- fasoo-fesubmodule이 nextjs의 ssr과 항상 호환되지 않기 때문에,
+  동적 임포트를 사용하여 특정 컴포넌트의 ssr을 비활성화!
+  [참고](https://github.com/JedWatson/react-select/issues/5555)
 
 ## 참고 링크
 
