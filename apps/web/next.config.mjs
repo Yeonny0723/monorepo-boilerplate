@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  //   webpack: config => {
+  //     config.externals = {
+  //       ...config.externals,
+  //       '@mis/fasoo-fesubmodule': '@mis/fasoo-fesubmodule',
+  //     };
+  //     return config;
+  //   },
+};
 
 export default nextConfig;
