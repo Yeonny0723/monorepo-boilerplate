@@ -1967,6 +1967,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eunbae/react-library-ex@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@eunbae/react-library-ex@npm:0.0.4"
+  checksum: 10c0/e670a02fcb77c93e8d0266f3501e52ebf8a91c8fc90e0d7bca4e30f2adac85ab4617dd95c4797fb50c1e42d9d1ab74c7cfe6c962bd42958327ebfd27807f2381
+  languageName: node
+  linkType: hard
+
 "@floating-ui/core@npm:^1.6.0":
   version: 1.6.7
   resolution: "@floating-ui/core@npm:1.6.7"
@@ -11997,6 +12004,7 @@ __metadata:
     "@chakra-ui/react": "npm:^2.8.2"
     "@emotion/react": "npm:^11.13.3"
     "@emotion/styled": "npm:^11.13.0"
+    "@eunbae/react-library-ex": "npm:^0.0.4"
     "@repo/eslint-config": "npm:*"
     "@repo/typescript-config": "npm:*"
     "@repo/ui": "npm:*"

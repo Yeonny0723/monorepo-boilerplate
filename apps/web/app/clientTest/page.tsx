@@ -1,43 +1,25 @@
 "use client";
 
-import { ChakraProvider, CircularProgress } from "@chakra-ui/react";
-import { FasooThemeProvider, Avatar } from "@mis/fasoo-fesubmodule";
+import { Avatar, FasooSkeleton } from "@mis/fasoo-fesubmodule";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+
+const FasooThemeProvider = dynamic(() => import("@mis/fasoo-fesubmodule").then(mod => mod.FasooThemeProvider), {
+  ssr: false,
+}); // 라이브러리가 사용하는 context provider가 ssr 환경에서 설정되지 않아 발생하는 문제 ㅠㅠ
+// https://github.com/chakra-ui/chakra-ui/discussions/8521
 
 export default function Test() {
   const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     setIsLoaded(true);
-    console.log("client");
   }, []);
 
-  console.log("server", CircularProgress);
-  console.log("server2", Avatar);
-
   return (
-    <ChakraProvider>
-      <FasooThemeProvider>
-        <CircularProgress value={80} />
-        {/* <Avatar code="3100000" label="개발2본부" type="ANONYMOUS" /> */}
-        {/* {isLoaded && <Avatar code="3100000" label="개발2본부" type="ANONYMOUS" />} */}
-      </FasooThemeProvider>
-    </ChakraProvider>
+    <FasooThemeProvider>
+      <FasooSkeleton isLoaded={false}>Hola</FasooSkeleton>
+      <Avatar code="3100000" label="개발2본부" type="ANONYMOUS" />
+    </FasooThemeProvider>
   );
 }
-
-// import dynamic from "next/dynamic";
-// const Avatar = dynamic(() => import("@mis/fasoo-fesubmodule").then(mod => mod.Avatar), { ssr: false });
-
-// import { FasooThemeProvider, Avatar as FAvatar } from "@mis/fasoo-fesubmodule";
-// export  function Test2() {
-//   const [isLoaded, setIsLoaded] = useState(false);
-//   useEffect(() => {
-//     setIsLoaded(true);
-//   }, []);
-
-//   return (
-//     <FasooThemeProvider>
-//       <FAvatar code="3100000" label="개발2본부" type="ANONYMOUS" />
-//     </FasooThemeProvider>
-//   );
-// }
