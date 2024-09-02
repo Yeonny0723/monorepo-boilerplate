@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+:root {
+  --Color-avatar-pink-border-black: rgba(0, 0, 0, 0.1);
+}
+
+html,
+body {
+  font-family: 'Noto Sans', sans-serif;
+  list-style-position: inside;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}

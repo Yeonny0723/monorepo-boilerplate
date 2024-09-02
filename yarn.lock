@@ -2661,6 +2661,64 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:^5.19.0":
+  version: 5.19.0
+  resolution: "@prisma/client@npm:5.19.0"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 10c0/df2604d5d392ed9717a8f6db70d745d8234099d24f23fa1e394b4a53598816227c7e89bf546928b8a457eb13b1580e914327a6033bceb49e6e5f9983d39f6214
+  languageName: node
+  linkType: hard
+
+"@prisma/debug@npm:5.19.0":
+  version: 5.19.0
+  resolution: "@prisma/debug@npm:5.19.0"
+  checksum: 10c0/51d851040d552216c548cc9ae23e36a2673f14d55e78890e253e151aad2fdeaaff3ee0b7eed62ef43300c25f5b31bd43bcb0fa4c2daea1dadd16933f358e8708
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:5.19.0-31.5fe21811a6ba0b952a3bc71400666511fe3b902f":
+  version: 5.19.0-31.5fe21811a6ba0b952a3bc71400666511fe3b902f
+  resolution: "@prisma/engines-version@npm:5.19.0-31.5fe21811a6ba0b952a3bc71400666511fe3b902f"
+  checksum: 10c0/1938d446d9deda7eb03d80a0f638d7d5f67a8060d74e44fb25c9f07284a200e84207010c019f2bccb6b6e270814261e0157c78f9b844054a94ce4b8e6763b13b
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:5.19.0":
+  version: 5.19.0
+  resolution: "@prisma/engines@npm:5.19.0"
+  dependencies:
+    "@prisma/debug": "npm:5.19.0"
+    "@prisma/engines-version": "npm:5.19.0-31.5fe21811a6ba0b952a3bc71400666511fe3b902f"
+    "@prisma/fetch-engine": "npm:5.19.0"
+    "@prisma/get-platform": "npm:5.19.0"
+  checksum: 10c0/217b64da7990c24a1cbad8431eebfd904bcc80fe35f34de80547b3d6f187d90829b35cc7b9c79a9da1e7d0998daee6027d4202d5c00856f9918d5ad76073f01f
+  languageName: node
+  linkType: hard
+
+"@prisma/fetch-engine@npm:5.19.0":
+  version: 5.19.0
+  resolution: "@prisma/fetch-engine@npm:5.19.0"
+  dependencies:
+    "@prisma/debug": "npm:5.19.0"
+    "@prisma/engines-version": "npm:5.19.0-31.5fe21811a6ba0b952a3bc71400666511fe3b902f"
+    "@prisma/get-platform": "npm:5.19.0"
+  checksum: 10c0/ae8193017971b3a7a58bdbdc8c8c7f064042e46f58d6d7d7bdac0b3a02c19050c6843ef520d23542c3778bd502567418db677958a9e7a07df9124f207c413fdd
+  languageName: node
+  linkType: hard
+
+"@prisma/get-platform@npm:5.19.0":
+  version: 5.19.0
+  resolution: "@prisma/get-platform@npm:5.19.0"
+  dependencies:
+    "@prisma/debug": "npm:5.19.0"
+  checksum: 10c0/bd14a2937a30230a101a6ab785d8a41658450b6139e5597e7b156a5e29573cbe67ea9af245a767646aa7073f278b495df76de2a50fcb376f54e11e6c5a710420
+  languageName: node
+  linkType: hard
+
 "@remix-run/router@npm:1.19.1":
   version: 1.19.1
   resolution: "@remix-run/router@npm:1.19.1"
@@ -4832,6 +4890,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cookie@npm:0.6.0":
+  version: 0.6.0
+  resolution: "cookie@npm:0.6.0"
+  checksum: 10c0/f2318b31af7a31b4ddb4a678d024514df5e705f9be5909a192d7f116cfb6d45cbacf96a473fa733faa95050e7cff26e7832bb3ef94751592f1387b71c8956686
+  languageName: node
+  linkType: hard
+
 "copy-to-clipboard@npm:3.3.3":
   version: 3.3.3
   resolution: "copy-to-clipboard@npm:3.3.3"
@@ -6433,7 +6498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:2.3.3, fsevents@npm:~2.3.2":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
@@ -6443,7 +6508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
   version: 2.3.3
   resolution: "fsevents@patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
   dependencies:
@@ -7153,6 +7218,24 @@ __metadata:
     jsbn: "npm:1.1.0"
     sprintf-js: "npm:^1.1.3"
   checksum: 10c0/331cd07fafcb3b24100613e4b53e1a2b4feab11e671e655d46dc09ee233da5011284d09ca40c4ecbdfe1d0004f462958675c224a804259f2f78d2465a87824bc
+  languageName: node
+  linkType: hard
+
+"iron-session@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "iron-session@npm:8.0.3"
+  dependencies:
+    cookie: "npm:0.6.0"
+    iron-webcrypto: "npm:1.2.1"
+    uncrypto: "npm:0.1.3"
+  checksum: 10c0/08edaaf2fc076f5076511a67cade9acc1151a63299783355ee936dcaa922b7d9baf833485de98a82e45711d5cf219650791a952d2f7b86838f2fcc565404e22d
+  languageName: node
+  linkType: hard
+
+"iron-webcrypto@npm:1.2.1":
+  version: 1.2.1
+  resolution: "iron-webcrypto@npm:1.2.1"
+  checksum: 10c0/5cf27c6e2bd3ef3b4970e486235fd82491ab8229e2ed0ac23307c28d6c80d721772a86ed4e9fe2a5cabadd710c2f024b706843b40561fb83f15afee58f809f66
   languageName: node
   linkType: hard
 
@@ -9671,6 +9754,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prisma@npm:^5.19.0":
+  version: 5.19.0
+  resolution: "prisma@npm:5.19.0"
+  dependencies:
+    "@prisma/engines": "npm:5.19.0"
+    fsevents: "npm:2.3.3"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    prisma: build/index.js
+  checksum: 10c0/ff400bef47e440cee1de31e854fb8efd43a01e5dbbc77b5e19d946ee8743309456efdba47f0f367f90ea8ed4014ca91b841dc99f1f5a745d69ed7d9b7a6f10b6
+  languageName: node
+  linkType: hard
+
 "proc-log@npm:^4.1.0, proc-log@npm:^4.2.0":
   version: 4.2.0
   resolution: "proc-log@npm:4.2.0"
@@ -11675,6 +11773,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uncrypto@npm:0.1.3":
+  version: 0.1.3
+  resolution: "uncrypto@npm:0.1.3"
+  checksum: 10c0/74a29afefd76d5b77bedc983559ceb33f5bbc8dada84ff33755d1e3355da55a4e03a10e7ce717918c436b4dfafde1782e799ebaf2aadd775612b49f7b5b2998e
+  languageName: node
+  linkType: hard
+
 "undici-types@npm:~6.19.2":
   version: 6.19.6
   resolution: "undici-types@npm:6.19.6"
@@ -12005,6 +12110,7 @@ __metadata:
     "@emotion/react": "npm:^11.13.3"
     "@emotion/styled": "npm:^11.13.0"
     "@eunbae/react-library-ex": "npm:^0.0.4"
+    "@prisma/client": "npm:^5.19.0"
     "@repo/eslint-config": "npm:*"
     "@repo/typescript-config": "npm:*"
     "@repo/ui": "npm:*"
@@ -12014,7 +12120,9 @@ __metadata:
     eslint: "npm:^8"
     eslint-config-next: "npm:15.0.0-rc.0"
     framer-motion: "npm:^11.3.31"
+    iron-session: "npm:^8.0.3"
     next: "npm:^14.2.7"
+    prisma: "npm:^5.19.0"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     typescript: "npm:^5"
