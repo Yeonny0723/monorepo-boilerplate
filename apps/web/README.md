@@ -42,3 +42,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ```
 yarn prisma migrate dev --name ["메시지"]
 ```
+
+프리즈마
+
+```
+yarn prisma db pull # (선택) 데이터 베이스 스키마 Primsa 모델 자동 반영. 수정 후 클라이언트 재생성.
+yarn prisma generate # Prisma 클라이언트 생성
+yarn prisma studio # 프리즈마 스튜디오
+```

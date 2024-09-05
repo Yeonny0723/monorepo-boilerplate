@@ -7,6 +7,10 @@ Monorepo Tool: Turborepo <br/>
 CICD: Vercel <br/>
 Package Manager: yarn berry <br/>
 
+### Requirement
+
+node version >= 18.12.0 <br/>
+
 ### 프로젝트 구조
 
 ```
